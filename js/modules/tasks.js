@@ -1,6 +1,6 @@
 var tasks = [
-    'zadanie pierwsze',
-    'zadanie drugie',
-    'zadanie trzecie',
-    'zadanie czwarte'
+    'note1',
+    'note2',
+    'note3',
+    'note4'
 ];

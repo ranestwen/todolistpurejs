@@ -17,53 +17,25 @@
 <body>
     <section class="input container">
         <input type="text" id="elo" placeholder="Nazwa zadania...">
-        <button class="input__btn" id="btn">Dodaj wpis</button>
-        <button class="input__btn" id="btn">Usuń wpis</button>
+        <button class="input__btn" id="btn__add">Dodaj wpis</button>
+        <button class="input__btn" id="btn__remove">Usuń wpis</button>
     </section>
-    <section class="tasks__list container">
-        <div id="lightbox"></div>
-        <div class="grid">
+    <section class="tasks__list container" id="main">
+        <div id="lightbox">
+            <div class="lightbox__note">
+                <textarea id="lightbox__string" rows="4" cols="50">
+                </textarea>
+                <button id="btn__accept">
+                    <i class="fas fa-check"></i>
+                </button>
+                <button id="btn__deny">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="grid" id="box__grid">
             <div class="zoom">
-                <p>
                     jeden
-                </p>
-                <button><i class="fas fa-check fa-2x"></i></button>
-                <button><i class="fas fa-times fa-2x"></i></button>
-            </div>
-            <div class="zoom">
-                <p>
-                    dwa 
-                </p>
-                <button><i class="fas fa-check fa-2x"></i></button>
-                <button><i class="fas fa-times fa-2x"></i></button>
-            </div>
-            <div class="zoom">
-                <p>
-                    trzy 
-                </p>
-                <button><i class="fas fa-check fa-2x"></i></button>
-                <button><i class="fas fa-times fa-2x"></i></button>
-            </div>
-            <div class="zoom">
-                <p>
-                    cztery 
-                </p>
-                <button><i class="fas fa-check fa-2x"></i></button>
-                <button><i class="fas fa-times fa-2x"></i></button>
-            </div>
-            <div class="zoom">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cupiditate minus pariatur totam.
-                </p>
-                <button><i class="fas fa-check fa-2x"></i></button>
-                <button><i class="fas fa-times fa-2x"></i></button>
-            </div>
-            <div class="zoom">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident cupiditate minus pariatur totam.
-                </p>
-                <button><i class="fas fa-check fa-2x"></i></button>
-                <button><i class="fas fa-times fa-2x"></i></button>
             </div>
         </div>
     </section>
@@ -74,8 +46,9 @@
 
 
     <script src="js/app.js"></script>
-    <script src="js/modules/showbuttons.js"></script>
     <script src="js/modules/tasks.js"></script>
+    <script src="js/modules/showbuttons.js"></script>
+    <script src="js/modules/add-entry.js"></script>
     <script src="js/modules/new-task.js"></script>
     <script src="js/modules/tasks-list.js"></script>
     <script src="js/modules/zoom.js"></script>
